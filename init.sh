@@ -113,5 +113,13 @@ crond -f -L /var/log/cron.log &
 echo "Starting PHP-FPM..."
 php-fpm85 -F &
 
+echo "Validating nginx configuration..."
+if nginx_test=$(nginx -t 2>&1); then
+    echo "$nginx_test"
+    echo "nginx configuration is valid."
+else
+    echo "ERROR: nginx configuration test failed:"
+    echo "$nginx_test"
+fi
 echo "Starting nginx..."
 exec nginx -g 'daemon off;'
