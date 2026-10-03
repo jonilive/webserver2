@@ -4,6 +4,7 @@ RUN mkdir -p /run/nginx /var/log /var/config /www
 
 VOLUME /var/log /var/config /www
 EXPOSE 80
+EXPOSE 443
 
 RUN apk add --no-cache \
     nginx \

@@ -32,6 +32,7 @@
   <DonateLink></DonateLink>
   <Requires></Requires>
   <Config Name="HTTP Port" Target="80" Default="80" Mode="tcp" Description="HTTP Port" Type="Port" Display="always" Required="true" Mask="false">80</Config>
+  <Config Name="HTTPS Port" Target="443" Default="443" Mode="tcp" Description="HTTPS Port" Type="Port" Display="always" Required="true" Mask="false">443</Config>
   <Config Name="Config folder" Target="/var/config" Default="/mnt/user/appdata/webserver2/config" Mode="rw" Description="Config folder" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/webserver2/config</Config>
   <Config Name="Log folder" Target="/var/log" Default="/mnt/user/appdata/webserver2/log" Mode="rw" Description="Log folder" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/webserver2/log</Config>
   <Config Name="WWW folder" Target="/www" Default="/mnt/user/appdata/webserver2/www" Mode="rw" Description="WWW folder" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/webserver2/www</Config>

@@ -4,6 +4,7 @@ services:
     container_name: webserver2
     ports:
       - "80:80"
+      - "443:443"
     volumes:
       - ./appdata/config:/var/config
       - ./appdata/log:/var/log
