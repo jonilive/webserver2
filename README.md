@@ -1,5 +1,5 @@
 
-<div align="center"><img width="256" height="256" alt="logo" src="https://github.com/user-attachments/assets/f4ee7bbf-6641-4eb3-a848-ce7d113fd95d" /></div>
+<div align="center"><img width="256" height="256" alt="logo" src="https://github.com/user-attachments/assets/ec8f3530-0c42-4037-83f8-c43d3c63241e" /></div>
 
 # Webserver2 Docker Setup
 
