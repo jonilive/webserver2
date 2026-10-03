@@ -1,0 +1,11 @@
+services:
+  webserver2:
+    image: ghcr.io/jonilive/webserver2:latest
+    container_name: webserver2
+    ports:
+      - "80:80"
+    volumes:
+      - ./appdata/config:/var/config
+      - ./appdata/log:/var/log
+      - ./appdata/www:/www
+    restart: unless-stopped

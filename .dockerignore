@@ -1,0 +1,9 @@
+.git
+.gitignore
+.gitattributes
+README.md
+LICENSE
+.github
+appdata
+.DS_Store
+*.log

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <n>Webserver2</n>
+  <Repository>ghcr.io/jonilive/webserver2:latest</Repository>
+  <Registry>https://github.com/jonilive/webserver2</Registry>
+  <Network>bridge</Network>
+  <MyIP></MyIP>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/jonilive/webserver2/issues</Support>
+  <Project>https://github.com/jonilive/webserver2</Project>
+  <Overview>
+    Webserver2 running the latest alpine, nginx and php-fpm
+    
+    Features:
+    - nginx web server with PHP 8.5-FPM integration
+    - PHP 8.5 with extensive extensions (GD, MySQLi, Redis, SOAP, XML, ZIP, etc.)
+    - Cron daemon for scheduled tasks
+    - Configurable via mounted volumes - edit configs without rebuilding
+    - Development tools included: Git, Python 3, Node.js, npm, htop
+    - Lightweight Alpine Linux base
+  </Overview>
+  <Category>Network:Web</Category>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <TemplateURL></TemplateURL>
+  <Icon>https://raw.githubusercontent.com/jonilive/webserver2/master/logo.png</Icon>
+  <ExtraParams></ExtraParams>
+  <PostArgs></PostArgs>
+  <CPUset></CPUset>
+  <DateInstalled>1656835200</DateInstalled>
+  <DonateText></DonateText>
+  <DonateLink></DonateLink>
+  <Requires></Requires>
+  <Config Name="HTTP Port" Target="80" Default="80" Mode="tcp" Description="HTTP Port" Type="Port" Display="always" Required="true" Mask="false">80</Config>
+  <Config Name="Config folder" Target="/var/config" Default="/mnt/user/appdata/webserver2/config" Mode="rw" Description="Config folder" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/webserver2/config</Config>
+  <Config Name="Log folder" Target="/var/log" Default="/mnt/user/appdata/webserver2/log" Mode="rw" Description="Log folder" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/webserver2/log</Config>
+  <Config Name="WWW folder" Target="/www" Default="/mnt/user/appdata/webserver2/www" Mode="rw" Description="WWW folder" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/webserver2/www</Config>
+</Container>
